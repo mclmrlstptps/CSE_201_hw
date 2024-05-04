@@ -1,3 +1,5 @@
+using System;
+
 class JournalApp
 {
     private Journal journal;
@@ -25,19 +27,15 @@ class JournalApp
                 case 1:
                     WriteNewEntry();
                     break;
-
                 case 2:
                     DisplayJournal();
                     break;
-
                 case 3:
                     SaveJournal();
                     break;
-
                 case 4:
                     LoadJournal();
                     break;
-
                 case 5:
                     exit = true;
                     break;
@@ -74,6 +72,7 @@ class JournalApp
 
     private string GetRandomPrompt()
     {
+        // Add your list of prompts here
         string[] prompts = {
             "Who was the most interesting person I interacted with today?",
             "What was the best part of my day?",

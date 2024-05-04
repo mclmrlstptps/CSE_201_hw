@@ -2,19 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+
 class Journal
 {
     private List<Entry> entries;
+
 
     public Journal()
     {
         entries = new List<Entry>();
     }
 
+
     public void AddEntry(string prompt, string response, string date)
     {
         entries.Add(new Entry(prompt, response, date));
     }
+
 
     public void Display()
     {
@@ -27,6 +31,7 @@ class Journal
         }
     }
 
+
     public void SaveToFile(string filename)
     {
         using (StreamWriter writer = new StreamWriter(filename))
@@ -37,6 +42,7 @@ class Journal
             }
         }
     }
+
 
     public void LoadFromFile(string filename)
     {
@@ -56,11 +62,13 @@ class Journal
     }
 }
 
+
 class Entry
 {
     public string Prompt { get; }
     public string Response { get; }
     public string Date { get; }
+
 
     public Entry(string prompt, string response, string date)
     {
@@ -69,3 +77,5 @@ class Entry
         Date = date;
     }
 }
+
+
