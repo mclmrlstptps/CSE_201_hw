@@ -103,7 +103,7 @@ public class GoalManager
         Console.WriteLine("1. Simple Goal");
         Console.WriteLine("2. Eternal Goal");
         Console.WriteLine("3. Checklist Goal");
-        Console.Write("Enter your choice: ");
+        Console.Write("Please Enter your choice: ");
         int choice = int.Parse(Console.ReadLine());
 
         switch (choice)
