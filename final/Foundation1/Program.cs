@@ -63,12 +63,12 @@ class Program
 {
     static void Main()
     {
-        // Create some videos
+        // Videos
         var video1 = new Video("Learning Python", "John Doe", 300);
         var video2 = new Video("Advanced Python Techniques", "Jane Smith", 450);
         var video3 = new Video("Python Data Science", "Emily Johnson", 600);
 
-        // Add comments to the videos
+        // Comments
         video1.AddComment(new Comment("Alice", "Great tutorial!"));
         video1.AddComment(new Comment("Bob", "Very helpful, thanks!"));
         video1.AddComment(new Comment("Charlie", "Could you do one on OOP next?"));
@@ -81,10 +81,10 @@ class Program
         video3.AddComment(new Comment("Heidi", "Learned a lot, thanks!"));
         video3.AddComment(new Comment("Ivan", "Please make more data science videos."));
 
-        // Store the videos in a list
+        // Video list
         var videos = new List<Video> { video1, video2, video3 };
 
-        // Display the information
+        // Display
         foreach (var video in videos)
         {
             Console.WriteLine(video);
